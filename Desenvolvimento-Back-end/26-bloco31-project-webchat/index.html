@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+
+      li {
+        list-style-type: none;
+      }
+    </style>
+    <title>MegaChat socket.IO</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  
+  <body>
+    <div>
+      <ul id="message"></ul>
+      <form action="" id="form">
+        <input data-testid="message-box" id="input" autocomplete="off" />
+        <button data-testid="send-button" >Send</button>
+      </form> 
+    </div>
+    <div>
+      <form action="" id="nickname-form">
+        <input data-testid="nickname-box" id="select-nickname" autocomplete="off">
+        <button data-testid="nickname-button">Send</button>
+      </form>
+      <ul id="nicknames"></ul>
+    </div>
+    
+   
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      const nicknames = document.getElementById('nicknames');
+      const nicknameForm = document.getElementById('nickname-form');
+      const nicknameInput = document.getElementById('select-nickname');
+    
+      const messages = document.getElementById('message')
+      const form = document.getElementById('form');
+      const input = document.getElementById('input');
+    
+      addEventListener('submit', function(e) {       
+        e.preventDefault();
+        if (input.value) {
+          let chatMessage = input.value;
+          let nickname = '';
+          socket.emit('message', { chatMessage, nickname });
+          input.value = '';
+        };
+
+        if (nicknameInput.value) {
+          socket.emit('nickname', nicknameInput.value);
+          nicknameInput.value = '';
+        };
+      });
+      
+      socket.on('message', function(message) {
+          const item = document.createElement('li');
+          item.textContent = message;
+          item.setAttribute('data-testid', 'message');
+          messages.appendChild(item);
+      });
+
+      socket.on('history', function(listMenssages) {
+          const item = document.createElement('li');
+          item.textContent = listMenssages;
+          item.setAttribute('data-testid', 'message');
+          messages.appendChild(item);
+      })
+
+      socket.on('nickname', function(chaters) {
+        nicknames.innerHTML = '';
+        const usuarioAtual = chaters[socket.id];
+        let namesList = [];
+        
+        Object.values(chaters).forEach((element) => {
+          if (usuarioAtual.name === element.name){
+            namesList.unshift(usuarioAtual.name);
+            return;
+          };
+            namesList.push(element.name);
+        });
+
+        latItem = namesList.length - 1;
+        
+        namesList.forEach((nick) => {
+          const lItem = document.createElement('li');
+          // if (nick === namesList[0]) {
+            lItem.setAttribute('data-testid', 'online-user');
+          // }
+          // if (nick === namesList[latItem]) {
+          //   lItem.setAttribute('data-testid', 'online-user');
+          // }
+              lItem.textContent = nick;
+              nicknames.appendChild(lItem);
+        });
+      })
+
+      window.onberoreunload = (e) => {
+        e.preventDefault();
+        socket.disconnect();
+      };
+
+    </script>
+  </body>
+</html>
