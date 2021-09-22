@@ -66,7 +66,7 @@ Este repositório foi feito com intuito de mostrar o código usado nas avaliaç�
 
 ### ├─ Ciência da Computação - modulo sendo estudado no momento
 
-│ - - - - - - └─────── [Introdução à Python](./Ciência-da-Computação/27-project-job-insights)
+└ - - - - - - └─────── [Introdução à Python](./Ciência-da-Computação/27-project-job-insights)
 
 ---
 
