@@ -1,3 +1,5 @@
+Bloco 05: JavaScript: DOM, Eventos e Web Storage
+
 # Boas vindas ao repositório do projeto Lista de Tarefas!
 
 O que foi desenvolvido ?
