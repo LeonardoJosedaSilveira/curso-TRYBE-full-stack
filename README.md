@@ -21,7 +21,7 @@ Este repositório foi feito com intuito de mostrar o código usado nas avaliaç�
   
   ├─────── [JavaScript Assíncrono e Promises](https://github.com/LeonardoJosedaSilveira/curso-TRYBE-full-stack/tree/main/Fundamentos-do-Desenvolvimento-Web/08-project-shopping-cart)
   
-  ├─────── [Testes automatizados com Jest](https://github.com/LeonardoJosedaSilveira/curso-TRYBE-full-stack/tree/main/Fundamentos-do-Desenvolvimento-Web/09-project-jest)
+  ├─────── [Testes automatizados com Jest](./Fundamentos-do-Desenvolvimento-Web/09-project-jest)
 
 
 
