@@ -59,7 +59,6 @@ O retorno da API de um produto cadastrado com sucesso deverá ser:
 
 O projeto deve rodar na porta `http://localhost:3000`
 
-![Criar produtos](./public/criarProdutos.png)
 
 #### Observações Técnicas:
 
@@ -74,43 +73,37 @@ O projeto deve rodar na porta `http://localhost:3000`
 **O que será verificado:**
 
 - Será validado que não é possível criar um produto com o nome menor que 5 caracteres
-  - Se o produto tiver o nome menor que cinco caracteres o resultado retornado deverá ser conforme exibido abaixo, com um status http `422`:
+  - Se o produto tiver o nome menor que cinco caracteres o resultado retornado deverá ser um status http `422`:
 
-![Nome menor que 5](./public/nomeMenorQue5.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que não é possível criar um produto com o mesmo nome de outro já existente
 
-  -  Se o produto tiver o mesmo nome o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  -  Se o produto tiver o mesmo nome o resultado retornado deverá ser status http `422`:
 
-![Mesmo nome](./public/mesmonome.png)
 
 - Será validado que não é possível criar um produto com quantidade menor que zero
 
-    - Se o produto tiver uma quantidade menor que zero o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+    - Se o produto tiver uma quantidade menor que zero o resultado retornado deverá ser status http `422`:
 
-![Menor que 0](./public/menorque0.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que não é possível criar um produto com quantidade igual a zero
 
-  - Se o produto tiver uma quantidade igual a zero o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se o produto tiver uma quantidade igual a zero o resultado retornado deverá ser status http `422`:
 
-![Igual a zero](./public/igualazero.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que não é possível criar um produto com uma string no campo quantidade
 
-  - Se o produto tiver uma quantidade com o valor em string o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se o produto tiver uma quantidade com o valor em string o resultado retornado deverá ser status http `422`:
 
-![Quantidade como string](./public/quantidadecomostring.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que é possível criar um produto com sucesso
 
-  - Se o produto for cadastrado com sucesso o resultado retornado deverá ser conforme exibido abaixo, com status http `201`:
+  - Se o produto for cadastrado com sucesso o resultado retornado deverá ser status http `201`:
 
-![Criar produtos](./public/criarProdutos.png)
 
 ### 2 - Crie um endpoint para listar os produtos
 
@@ -124,21 +117,18 @@ O projeto deve rodar na porta `http://localhost:3000`
 
 - Será validado que todos produtos estão sendo retornados
 
-  - Se a lista retornar com sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se a lista retornar com sucesso, o resultado retornado deverá ser status http `200`:
 
-![Lista de produtos](./public/listadeprodutos.png)
 
 - Será validado que é possível listar um determinado produto
 
-  - Se a lista retornar com sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se a lista retornar com sucesso, o resultado retornado deverá ser status http `200`:
 
-![Listar um produto](./public/produtoespecifico.png)
 
 - Será validado que não é possível listar um produto que não existe
 
-  - Se a lista retornar com falha, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a lista retornar com falha, o resultado retornado deverá ser status http `422`:
 
-![Produto não existe](./public/produtonaoexiste.png)
 
 ### 3 - Crie um endpoint para atualizar um produto
 
@@ -152,37 +142,32 @@ O projeto deve rodar na porta `http://localhost:3000`
 
 - Será validado que não é possível atualizar um produto com o nome menor que 5 caracteres
 
-  - Se o produto tiver o nome menor que cinco caracteres, o resultado retornado deverá ser conforme exibido abaixo, com status `422`:
+  - Se o produto tiver o nome menor que cinco caracteres, o resultado retornado deverá ser status `422`:
 
-![Atualizar com nome menor que cinco](./public/atualizarcomnomemenorque5.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que não é possível atualizar um produto com quantidade menor que zero
 
-  - Se o produto tiver o quantidade menor que zero, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se o produto tiver o quantidade menor que zero, o resultado retornado deverá ser status http `422`:
 
-![Atualizar menor que zero](./public/atualizarmenorque0.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que não é possível atualizar um produto com quantidade igual a zero
 
-  - Se o produto tiver o quantidade igual a zero, o resultado mostrado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se o produto tiver o quantidade igual a zero, o resultado mostrado deverá ser status http `422`:
 
-![Atualizar igual a zero](./public/atualizarigual0.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que não é possível atualizar um produto com uma string no campo quantidade
 
-  - Se o produto tiver o quantidade como string, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se o produto tiver o quantidade como string, o resultado retornado deverá ser status http `422`:
 
-![Atualizar com string](./public/atualizarcomostring.png)
 (As contrabarras `\` estão escapando as aspas de dentro da string)
 
 - Será validado que é possível atualizar um produto com sucesso]**
 
-  - Se o produto atualizado com sucesso, o resultado mostrretornadoado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se o produto atualizado com sucesso, o resultado mostrretornadoado deverá ser status http `200`:
 
-![Atualizado com sucesso](./public/atualizarcomsucesso.png)
 
 ### 4 - Crie um endpoint para deletar um produto
 
@@ -194,15 +179,13 @@ O projeto deve rodar na porta `http://localhost:3000`
 
 - Será validado que é possível deletar um produto com sucesso
 
-  - Se o produto deletado com sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se o produto deletado com sucesso, o resultado retornado deverá ser status http `200`:
 
-![Deletar um produto](./public/deletarumproduto.png)
 
 - Será validado que não é possível deletar um produto que não existe
 
   - Se o produto não for deletado com sucesso, o resultado retornado deverá ser esse e com status http `422`:
 
-![Deletar um produto que não existe](./public/deletarumprodutoquenaoexiste.png)
 
 ### 5 - Crie um endpoint para cadastrar vendas
 
@@ -252,33 +235,28 @@ O retorno de uma venda cadastrada com sucesso deverá ser:
 
 - Será validado que não é possível cadastrar vendas com quantidade menor que zero
 
-  - Se a venda tiver uma quantidade menor que zero, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a venda tiver uma quantidade menor que zero, o resultado retornado deverá ser status http `422`:
 
-![Vendas menor que zero](./public/comprasmenorquezero.png)
 
 - Será validado que não é possível cadastrar vendas com quantidade igual a zero
 
-  - Se a venda tiver uma quantidade igual a zero, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a venda tiver uma quantidade igual a zero, o resultado retornado deverá ser status http `422`:
 
-![Vendas igual a zero](./public/comprasigualazero.png)
 
 - Será validado que não é possível cadastrar vendas com uma string no campo quantidade
 
-  - Se a venda tiver uma quantidade com valor, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a venda tiver uma quantidade com valor, o resultado retornado deverá ser status http `422`:
 
-![Vendas com string](./public/comprascomstring.png)
 
 - Será validado que é possível criar uma venda com sucesso
 
-  - Se a venda foi feita com sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se a venda foi feita com sucesso, o resultado retornado deverá ser status http `200`:
 
-![Cadastro de venda com sucesso](./public/cadastrodevendacomsucesso.png)
 
 - Será validado que é possível criar várias vendas com sucesso
 
-  - Se as vendas foi feita com sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se as vendas foi feita com sucesso, o resultado retornado deverá ser status http `200`:
 
-![Cadastrar varias compras](./public/variascompras.png)
 
 ### 6 - Crie um endpoint para listar as vendas
 
@@ -292,21 +270,18 @@ O retorno de uma venda cadastrada com sucesso deverá ser:
 
 - Será validado que todas as vendas estão sendo retornadas
 
-  - Se todas vendas estão sendo listadas, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se todas vendas estão sendo listadas, o resultado retornado deverá ser status http `200`:
 
-![Listar todas as vendas](./public/todasvendas.png)
 
 - Será validado que é possível listar uma determinada venda
 
- - Se a venda esta sendo listada, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+ - Se a venda esta sendo listada, o resultado retornado deverá ser status http `200`:
 
-![Listar uma venda](./public/listaumavenda.png)
 
 - Será validado que não é possível listar uma venda inexistente
 
-  - Se a venda não esta sendo listada, o resultado retornado deverá ser conforme exibido abaixo, com status http `404`:
+  - Se a venda não esta sendo listada, o resultado retornado deverá ser status http `404`:
 
-![Listar uma venda que não existe](./public/vendanaoexiste.png)
 
 ### 7 - Crie um endpoint para atualizar uma venda
 
@@ -331,27 +306,23 @@ O retorno de uma venda cadastrada com sucesso deverá ser:
 
 - Será validado que não é possível atualizar vendas com quantidade menor que zero
 
-  - Se a venda tiver uma quantidade menor que zero, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a venda tiver uma quantidade menor que zero, o resultado retornado deverá ser status http `422`:
 
-![Atualizar venda menor que zero](./public/atualizarvendamenorquezero.png)
 
 - Será validado que não é possível atualizar vendas com quantidade igual a zero
 
-  - Se a venda tiver uma quantidade igual a zero, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a venda tiver uma quantidade igual a zero, o resultado retornado deverá ser status http `422`:
 
-![Atualizar venda igual zero](./public/atualizarvendaigualzero.png)
 
 - Será validado que não é possível atualizar vendas com uma string no campo quantidade
 
-  - Se a venda tiver uma quantidade do tipo string, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a venda tiver uma quantidade do tipo string, o resultado retornado deverá ser status http `422`:
 
-![Atualizar venda com string](./public/atualizarvendacomstring.png)
 
 - Será validado que é possível atualizar uma vendas com sucesso
 
-  - Se a venda for atualizada com sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `200`:
+  - Se a venda for atualizada com sucesso, o resultado retornado deverá ser status http `200`:
 
-![Atualizar uma venda com sucesso](./public/atualizarvendacomsucesso.png)
 
 ### 8 - Crie um endpoint para deletar uma venda
 
@@ -363,15 +334,13 @@ O retorno de uma venda cadastrada com sucesso deverá ser:
 
 - Será validado que é possível deletar uma venda com sucesso
 
-  - Se a venda foi deletada sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `200` e será verificado depois que a venda não existe e deverar retornar http `404`:
+  - Se a venda foi deletada sucesso, o resultado retornado deverá ser status http `200` e será verificado depois que a venda não existe e deverar retornar http `404`:
 
-![Deletar uma venda com sucesso](./public/deletarumavendacomsucesso.png)
 
 - Será validado que não é possível deletar uma venda que não existe
 
-  - Se a venda não foi deletada sucesso, o resultado retornado deverá ser conforme exibido abaixo, com status http `422`:
+  - Se a venda não foi deletada sucesso, o resultado retornado deverá ser status http `422`:
 
-![Deletar uma venda que não existe](./public/deletarumavendaquenaoexiste.png)
 
 ### 9 - Atualize a quantidade de produtos
 
@@ -399,6 +368,5 @@ O retorno de uma venda cadastrada com sucesso deverá ser:
 
 - Será validado que o estoque do produto nunca fique com a quantidade menor que zero
 
-  - Um produto não poderá ficar com a quantidade menor que zero, o resultado retornado deverá ser conforme exibido abaixo, com status http `404`:
+  - Um produto não poderá ficar com a quantidade menor que zero, o resultado retornado deverá ser status http `404`:
 
-![Compra maior que a quantidade](./public/compramaiorqueaquantidade.png)

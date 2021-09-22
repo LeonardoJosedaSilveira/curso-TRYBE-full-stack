@@ -58,45 +58,38 @@ Nela, será possível cadastrar usuários do tipo cliente e admin. Apenas usuár
 
 - **[Será validado que o campo "name" é obrigatório]**
 
-Se o usuário não tiver o campo "name" o resultado retornado deverá ser conforme exibido abaixo, com um status http `400`:
+Se o usuário não tiver o campo "name" o resultado retornado deverá ser um status http `400`:
 
-![Usuário sem Nome](./public/usuariosemnome.png)
 
 - **[Será validado que o campo "email" é obrigatório]**
 
-Se o usuário não tiver o campo "email" o resultado retornado deverá ser conforme exibido abaixo, com um status http `400`:
+Se o usuário não tiver o campo "email" o resultado retornado deverá ser um status http `400`:
 
-![Usuário sem Email](./public/usuariosememail.png)
 
 - **[Será validado que não é possível cadastrar usuário com o campo email inválido]**
 
-Se o usuário tiver o campo email inválido o resultado retornado deverá ser conforme exibido abaixo, com um status http `400`:
+Se o usuário tiver o campo email inválido o resultado retornado deverá ser um status http `400`:
 
-![Email Inválido](./public/campoemailinvalido.png)
 
 - **[Será validado que o campo "senha" é obrigatório]**
 
-Se o usuário não tiver o campo "senha" o resultado retornado deverá ser conforme exibido abaixo, com um status http `400`:
+Se o usuário não tiver o campo "senha" o resultado retornado deverá ser um status http `400`:
 
-![Usuário sem Senha](./public/usuariosemsenha.png)
 
 - **[Será validado que o campo "email" é único]**
 
-Se o usuário cadastrar o campo "email" com um email que já existe, o resultado retornado deverá ser conforme exibido abaixo, com um status http `409`:
+Se o usuário cadastrar o campo "email" com um email que já existe, o resultado retornado deverá ser um status http `409`:
 
-![Email já Usado](./public/emailjausado.png)
 
 - **[Será validado que é possível cadastrar usuário com sucesso]**
 
-Se o usuário for cadastrado com sucesso o resultado retornado deverá ser conforme exibido abaixo, com um status http `201`:
+Se o usuário for cadastrado com sucesso o resultado retornado deverá ser um status http `201`:
 
-![Usuário Cadastrado](./public/usuariocriadocomsucesso.png)
 
 - **[Será validado que é possível ao cadastrar usuário, o valor do campo "role" tenha o valor "user"]**
 
-Se o usuário for criado com sucesso o resultado retornado deverá ser conforme exibido abaixo, com um status http `201`:
+Se o usuário for criado com sucesso o resultado retornado deverá ser um status http `201`:
 
-![Campo Role](./public/validarrole.png)
 
 ### 2 - Crie um endpoint para o login de usuários
 
@@ -121,33 +114,28 @@ Se o usuário for criado com sucesso o resultado retornado deverá ser conforme 
 
 - **[Será validado que o campo "email" é obrigatório]**
 
-Se o login não tiver o campo "email" o resultado retornado deverá ser conforme exibido abaixo, com um status http `401`:
+Se o login não tiver o campo "email" o resultado retornado deverá ser um status http `401`:
 
-![Usuário sem Senha](./public/loginsememail.png)
 
 - **[Será validado que o campo "password" é obrigatório]**
 
-Se o login não tiver o campo "password" o resultado retornado deverá ser conforme exibido abaixo, com um status http `401`:
+Se o login não tiver o campo "password" o resultado retornado deverá ser um status http `401`:
 
-![Usuário sem Senha](./public/loginsemsenha.png)
 
 - **[Será validado que não é possível fazer login com um email inválido]**
 
-Se o login tiver o email inválido o resultado retornado deverá ser conforme exibido abaixo, com um status http `401`:
+Se o login tiver o email inválido o resultado retornado deverá ser um status http `401`:
 
-![Email Inválido](./public/loginemailinvalido.png)
 
 - **[Será validado que não é possível fazer login com uma senha inválida]**
 
-Se o login tiver a senha inválida o resultado retornado deverá ser conforme exibido abaixo, com um status http `401`:
+Se o login tiver a senha inválida o resultado retornado deverá ser um status http `401`:
 
-![Senha Inválida](./public/loginsenhainvalida.png)
 
 - **[Será validado que é possível fazer login com sucesso]**
 
-Se foi feito login com sucesso o resultado retornado deverá ser conforme exibido abaixo, com um status http `200`:
+Se foi feito login com sucesso o resultado retornado deverá ser um status http `200`:
 
-![Login com Sucesso](./public/logincomsucesso.png)
 
 ### 3 - Crie um endpoint para o cadastro de receitas
 
@@ -177,33 +165,28 @@ Se foi feito login com sucesso o resultado retornado deverá ser conforme exibid
 
 - **[Será validado que não é possível cadastrar receita sem o campo "name"]**
 
-Se a receita não tiver o campo "name" o resultado retornado deverá ser conforme exibido abaixo, com um status http `400`:
+Se a receita não tiver o campo "name" o resultado retornado deverá ser um status http `400`:
 
-![Receita sem nome](./public/receitasemnome.png)
 
 - **[Será validado que não é possível cadastrar receita sem o campo "ingredients"]**
 
-Se a receita não tiver o campo "ingredients" o resultado retornado deverá ser conforme exibido abaixo, com um status http `400`:
+Se a receita não tiver o campo "ingredients" o resultado retornado deverá ser um status http `400`:
 
-![Receita sem ingrediente](./public/receitasemingrediente.png)
 
 - **[Será validado que não é possível cadastrar receita sem o campo "preparation"]**
 
-Se a receita não tiver o campo "preparation" o resultado retornado deverá ser conforme exibido abaixo, com um status http `400`:
+Se a receita não tiver o campo "preparation" o resultado retornado deverá ser um status http `400`:
 
-![Receita sem preparo](./public/receitasempreparo.png)
 
 - **[Será validado que não é possível cadastrar uma receita com token invalido]**
 
-Se a receita não tiver o token válido o resultado retornado deverá ser conforme exibido abaixo, com um status http `401`:
+Se a receita não tiver o token válido o resultado retornado deverá ser um status http `401`:
 
-![Receita com token inválido](./public/tokeninvalidoreq3.png)
 
 - **[Será validado que é possível cadastrar uma receita com sucesso]**
 
-O resultado retornado para cadastrar a receita com sucesso deverá ser conforme exibido abaixo, com um status http `201`:
+O resultado retornado para cadastrar a receita com sucesso deverá ser um status http `201`:
 
-![Receita com Sucesso](./public/receitacomsucesso.png)
 
 ### 4 - Crie um endpoint para a listagem de receitas
 
@@ -215,15 +198,13 @@ O resultado retornado para cadastrar a receita com sucesso deverá ser conforme 
 
 - **[Será validado que é possível listar todas as receitas sem estar autenticado]**
 
-O resultado retornado para listar receitas com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para listar receitas com sucesso deverá ser um status http `200`:
 
-![Receita com Sucesso](./public/listarreceitas.png)
 
 - **[Será validado que é possível listar todas as receitas estando autenticado]**
 
-O resultado retornado para listar receitas com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para listar receitas com sucesso deverá ser um status http `200`:
 
-![Receita com Sucesso](./public/listarreceitas.png)
 
 ### 5 - Crie um endpoint para visualizar uma receita específica
 
@@ -235,21 +216,18 @@ O resultado retornado para listar receitas com sucesso deverá ser conforme exib
 
 - **[Será validado que é possível listar uma receita específica sem estar autenticado]**
 
-O resultado retornado para listar uma receita com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para listar uma receita com sucesso deverá ser um status http `200`:
 
-![Listar uma Receita](./public/listarumareceita.png)
 
 - **[Será validado que é possível listar uma receita específica estando autenticado]**
 
-O resultado retornado para listar uma receita com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para listar uma receita com sucesso deverá ser um status http `200`:
 
-![Listar uma Receita](./public/listarumareceita.png)
 
 - **[Será validado que não é possível listar uma receita que não existe]**
 
-O resultado retornado para listar uma receita que não existe deverá ser conforme exibido abaixo, com um status http `404`:
+O resultado retornado para listar uma receita que não existe deverá ser um status http `404`:
 
-![Listar uma Receita inexistente](./public/receitanaoencontrada.png)
 
 ### 6 - Crie uma query em mongo que insira uma pessoa usuária com permissões de admin
 
@@ -287,27 +265,23 @@ Será validado no arquivo `seed.js` existe a query para criar um usuário root
 
 - **[Será validado que não é possível editar receita sem estar autenticado]**
 
-O resultado retornado para editar receita sem autenticação deverá ser conforme exibido abaixo, com um status http `401`:
+O resultado retornado para editar receita sem autenticação deverá ser um status http `401`:
 
-![Editar uma Receita sem autenticação](./public/editarsemautenticacao.png)
 
 - **[Será validado que não é possível editar receita com token inválido]**
 
-O resultado retornado para editar receita com token inválido deverá ser conforme exibido abaixo, com um status http `401`:
+O resultado retornado para editar receita com token inválido deverá ser um status http `401`:
 
-![Editar uma Receita com token inválido](./public/editartokeninvalido.png)
 
 - **[Será validado que é possível editar receita estando autenticado]**
 
-O resultado retornado para editar uma receita com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para editar uma receita com sucesso deverá ser um status http `200`:
 
-![Editar uma Receita](./public/editarcomsucesso.png)
 
 - **[Será validado que é possível editar receita com usuário admin]**
 
-O resultado retornado para editar uma receita com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para editar uma receita com sucesso deverá ser um status http `200`:
 
-![Editar uma Receita](./public/editarcomsucesso.png)
 
 ### 8 - Crie um endpoint para a exclusão de uma receita
 
@@ -321,21 +295,18 @@ O resultado retornado para editar uma receita com sucesso deverá ser conforme e
 
 - **[Será validado que não é possível excluir receita sem estar autenticado]**
 
-O resultado retornado para excluir uma receita sem autenticação deverá ser conforme exibido abaixo, com um status http `401`:
+O resultado retornado para excluir uma receita sem autenticação deverá ser um status http `401`:
 
-![Excluir uma Receita sem autenticação](./public/excluirsemautenticacao.png)
 
 - **[Será validado que é possível excluir receita estando autenticado]**
 
-O resultado retornado para excluir uma receita com sucesso deverá ser conforme exibido abaixo, com um status http `204`:
+O resultado retornado para excluir uma receita com sucesso deverá ser um status http `204`:
 
-![Excluir uma Receita](./public/excluircomsucesso.png)
 
 - **[Será validado que é possível excluir receita com usuário admin]**
 
-O resultado retornado para excluir uma receita com sucesso deverá ser conforme exibido abaixo, com um status http `204`:
+O resultado retornado para excluir uma receita com sucesso deverá ser um status http `204`:
 
-![Excluir uma Receita](./public/excluircomsucesso.png)
 
 ### 9 - Crie um endpoint para a adição de uma imagem a uma receita
 
@@ -359,27 +330,23 @@ O resultado retornado para excluir uma receita com sucesso deverá ser conforme 
 
 - **[Será validado que é possível enviar foto com usuário autenticado]**
 
-O resultado retornado para adicionar uma foto na receita com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para adicionar uma foto na receita com sucesso deverá ser um status http `200`:
 
-![Foto Autenticada](./public/fotocomsucesso.png)
 
 - **[Será validado que ao enviar foto, o nome da imagem é alterada para o id da receita]**
 
-O resultado retornado para adicionar uma foto na receita com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para adicionar uma foto na receita com sucesso deverá ser um status http `200`:
 
-![Foto Autenticada](./public/fotocomsucesso.png)
 
 - **[Será validado que não é possível enviar foto sem estar autenticado]**
 
-O resultado retornado para adicionar uma foto na receita com sucesso deverá ser conforme exibido abaixo, com um status http `401`:
+O resultado retornado para adicionar uma foto na receita com sucesso deverá ser um status http `401`:
 
-![Excluir uma Receita](./public/fotonaoautenticada.png)
 
 - **[Será validado que é possível enviar foto com usuário admin]**
 
-O resultado retornado para adicionar uma foto na receita com sucesso deverá ser conforme exibido abaixo, com um status http `200`:
+O resultado retornado para adicionar uma foto na receita com sucesso deverá ser um status http `200`:
 
-![Foto Autenticada](./public/fotocomsucesso.png)
 
 ### 10 - Crie um endpoint para acessar a imagem de uma receita
 
@@ -391,4 +358,3 @@ O resultado retornado para adicionar uma foto na receita com sucesso deverá ser
 
 O resultado retornado deverá ser do tipo imagem, com um status http `200`:
 
-![Foto Autenticada](./public/imagemrecetornada.png)

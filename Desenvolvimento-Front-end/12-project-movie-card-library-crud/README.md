@@ -30,15 +30,13 @@ Você deve utilizar um `BrowserRouter` pra criar as rotas da sua aplicação. As
 
 ### 2 - Faça uma requisição para buscar e mostrar a lista de filmes quando `MovieList` for montado 
 
-Para buscar a lista, você deve utilizar a função `getMovies` importada do módulo `movieAPI` em `MovieList`. Essa função retorna uma _promise_. A requisição deve ser feita no momento em que o `MovieList` for montado no DOM. Enquanto a requisição estiver em curso, `MovieList` deve renderizar o componente `Loading`, como ilustrado na imagem a seguir.
+Para buscar a lista, você deve utilizar a função `getMovies` importada do módulo `movieAPI` em `MovieList`. Essa função retorna uma _promise_. A requisição deve ser feita no momento em que o `MovieList` for montado no DOM. Enquanto a requisição estiver em curso, `MovieList` deve renderizar o componente `Loading`.
 
-![image](loading.png)
 
 Obs: O componente `Loading` deve conter o texto `Carregando...`
 
-Uma vez que a requisição retornar, o resultado deve ser renderizado. Para cada filme, renderize um componente `MovieCard`, como ilustrado abaixo.
+Uma vez que a requisição retornar, o resultado deve ser renderizado. Para cada filme, renderize um componente `MovieCard`.
 
-![image](index.png)
 
 Você precisará adicionar um estado em `MovieList` para controlar o que será exibido.
 
@@ -71,7 +69,7 @@ Todos os `MovieCard`s devem possuir em seu conteúdo, pelo menos, o título, a s
   - Avaliação;
   - um link com o texto "EDITAR" apontando para a rota `/movies/:id/edit` e um link apontando para a rota raiz (`/`) com o texto "VOLTAR".
 
-Os campos devem existir no cartão conforme ilustrado na imagem abaixo.
+Os campos devem existir no cartão conforme.
 
 #### O que será verificado:
 ```
@@ -81,7 +79,6 @@ Os campos devem existir no cartão conforme ilustrado na imagem abaixo.
 - `MovieDetails` deverá conter um botão com o texto "EDITAR" que redireciona para a página de edição de filme
 ```
 
-![image](card-details.png)
 
 ### Para os requisitos 5 e 6:
 

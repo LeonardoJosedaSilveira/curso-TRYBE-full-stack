@@ -30,7 +30,6 @@ Você vai criar uma aplicação que computa gastos em diferentes moedas e conver
 
 Crie uma página para que a pessoa usuária se identifique, com email e senha. Esta página deve ser a página inicial de seu aplicativo.
 
-  ![image](login.gif)
 
 #### 1. Crie uma página inicial de login com os seguintes campos e características:
 
@@ -64,7 +63,6 @@ Crie uma página para que a pessoa usuária se identifique, com email e senha. E
 
 Crie uma página para gerenciar a carteira de gastos em diversas moedas, e que traga a despesa total em uma moeda só. Esta página deve ser renderizada por um componente chamado ***Wallet***.
 
-  ![image](carteira.gif)
 
 ### Configurando sua página
 
@@ -298,7 +296,6 @@ O que será verificado:
 #### 6. Crie um botão para deletar uma despesa da tabela contendo as seguintes características:
 
 
-   ![image](btnExcluir.gif)
 
   * O botão deve ser o último item da linha da tabela e deve possuir `data-testid="delete-btn"`.
 
