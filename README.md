@@ -41,27 +41,27 @@ Este repositório foi feito com intuito de mostrar o código usado nas avaliaç�
 
 ### ├─ Desenvolvimento Back-end
 
-│ - - - - - - ├─────── [Introdução à SQL](./Desenvolvimento-Back-end/16-mysql-all-for-one)
+│ - - - - - - ├─────── [Introdução à SQL](./Desenvolvimento-Back-end/16-project-mysql-all-for-one)
 
-│ - - - - - - ├─────── [Funções SQL, Joins e Subqueries](./Desenvolvimento-Back-end/17-mysql-vocabulary-booster)
+│ - - - - - - ├─────── [Funções SQL, Joins e Subqueries](./Desenvolvimento-Back-end/17-project-mysql-vocabulary-booster)
 
-│ - - - - - - ├─────── [Normalização e Modelagem de Banco de Dados](./Desenvolvimento-Back-end/18-mysql-one-for-all)
+│ - - - - - - ├─────── [Normalização e Modelagem de Banco de Dados](./Desenvolvimento-Back-end/18-project-mysql-one-for-all)
 
-│ - - - - - - ├─────── [Introdução ao MongoDB](./Desenvolvimento-Back-end/19-mongodb-dataflights)
+│ - - - - - - ├─────── [Introdução ao MongoDB](./Desenvolvimento-Back-end/19-project-mongodb-dataflights)
 
-│ - - - - - - ├─────── [MongoDB: Updates Simples e Complexos](./Desenvolvimento-Back-end/20-mongodb-commerce)
+│ - - - - - - ├─────── [MongoDB: Updates Simples e Complexos](./Desenvolvimento-Back-end/20-project-mongodb-commerce)
 
-│ - - - - - - ├─────── [MongoDB: Aggregation Framework](./Desenvolvimento-Back-end/21-mongodb-aggregations)
+│ - - - - - - ├─────── [MongoDB: Aggregation Framework](./Desenvolvimento-Back-end/21-project-mongodb-aggregations)
 
-│ - - - - - - ├─────── [Introdução ao desenvolvimento Web com NodeJS](./Desenvolvimento-Back-end/22-bloco26-project-talker-manager)
+│ - - - - - - ├─────── [Introdução ao desenvolvimento Web com NodeJS](./Desenvolvimento-Back-end/22-project-talker-manager)
 
-│ - - - - - - ├─────── [NodeJS: Camada de Serviço e Arquitetura Rest e Restful](./Desenvolvimento-Back-end/23-bloco27-sd-09-store-manager)
+│ - - - - - - ├─────── [NodeJS: Camada de Serviço e Arquitetura Rest e Restful](./Desenvolvimento-Back-end/23-project-store-manager)
 
-│ - - - - - - ├─────── [Autenticação e Upload de Arquivos](./Desenvolvimento-Back-end/24-bloco28-cookmaster)
+│ - - - - - - ├─────── [Autenticação e Upload de Arquivos](./Desenvolvimento-Back-end/24-project-cookmaster)
 
-│ - - - - - - ├─────── [Arquitetura: SOLID e ORM](./Desenvolvimento-Back-end/25-bloco30-project-blogs-api)
+│ - - - - - - ├─────── [Arquitetura: SOLID e ORM](./Desenvolvimento-Back-end/25-project-blogs-api)
 
-│ - - - - - - └─────── [Sockets](./Desenvolvimento-Back-end/26-bloco31-project-webchat)
+│ - - - - - - └─────── [Sockets](./Desenvolvimento-Back-end/26-project-webchat)
 
 
 ### ├─ Ciência da Computação - modulo sendo estudado no momento
